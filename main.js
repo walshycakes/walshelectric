@@ -26,8 +26,7 @@ $(document).ready(function(){
 	);
 	$('#box5').click(
 		function() {
-			var win=window.open('https://secure2.mhelpdesk.com/Modules/TicketForm/Public_Form.aspx?enc=V1F7xhDL+ef8fzHu24wQxfq5OZNACE1jsGh5zzmfiX81p+Jd5OPBTwBFrQ7ZfAkt', '_blank');
-  			win.focus();
+			window.location.href='mailto:mail@walshelectric.net';
 		}
 	);
 	$('#box1').hover(

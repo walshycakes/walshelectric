@@ -10,10 +10,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
 	<script src="main.js" type="text/javascript"></script>
+
+	
+
 </head>
 
 
 <body>		
+	
 	<div id="wrapper" style="height:990px">
 		<!--<div id="contactinfo" class="pad-5">
 			<span class="strong">22 Hickory Lane<br />
@@ -41,7 +45,7 @@
 	        		</td>
 	        		<td>
 	        			<span class="strong" id="box1title">Residential and Commercial Generators</span>
-						<div class="small" id="box1cont" style="width:205px">GENERAC Automatic Standby Generators<br />by Generac Power Systems, Inc.</div>
+						<div class="small" id="box1cont" style="width:205px">GENERAC Automatic Standby Generators,<br> Sizing information, Products & More!</div>
 	        		</td>
 	        	</tr>
 	        </table>
@@ -115,23 +119,25 @@
 			Ivyland, PA 18974</span><br />
 			<span class="medium">Phone: 267.684.6951<br />
 			Fax: 267.684.6993<br />
-			mail@walshelectric.net</span></td></tr><tr><td style="font-size:10px;text-align:center;padding-top:10px"">
-			<img src="images/creditcards.png" style="border:none" alt="Visa and Mastercard accepted!" /><br />
-			We accept personal checks
+			mail@walshelectric.net</span></td></tr><tr><td style="font-size:10px;text-align:center;padding-top:10px">
+			<img src="images/creditcards.png" style="border:none"/><br />
+			*We accept personal checks!
 			</td></table>
 		</div>
 	    
 	    <div id="content" class="pad-10 medium">
-	    	<span class="contentheader">GENERAC Automatic Standby Generators</span><br />
-			<span class="small">by Generac Power Systems, Inc.</span><br /><br />
+	    	<h1><u>GENERAC Automatic Standby Generators</u></h1>
 			<table><tr>
-				<td><img src="images/gen1.png" alt="GENERAC" /></td>
+				<td><img src="images/gen1.png" alt="GENERAC" style="padding: 20px"/></td>
 			<td>
 				<span class="strong">Have you been affected by winter storms and flooding? Are you prepared to handle a power outage?</span><br /><br />
-				<span class="medium">Most people are not -- Don't take power for granted, be prepared with a GENERAC automatic standby generator. Never feel powerless with the #1 selling home standby generator. Choose the generator four out of five families have already installed. Protect your home or business with the preferred 24/7 backup power protection of Generac.</span>
+				<span class="medium" style="line-height:15px">Most people are not -- Don't take power for granted, be prepared with a GENERAC automatic standby generator. Never feel powerless with the #1 selling home standby generator. Choose the generator four out of five families have already installed. Protect your home or business with the preferred 24/7 backup power protection of Generac.</span>
 			</td></tr>
 			</table>
-			<ul class="medium">
+			<!--
+			<div style="float:left">
+				<h2>Features</h2>
+			<ul class="medium" style="line-height: 25px; padding-left:15px">
 				<li>Automatic, hands-free backup power supply for home or business.</li>
 				<li>Kicks in within ten seconds of determining power loss. Your life won’t miss a beat.</li>
 				<li>Powered by Generac’s OHVI® engine - designed specifically for generators. Lasts three to four times longer than competitive engines.</li>
@@ -139,18 +145,949 @@
 				<li>TruePower™ Technology provides clean, smooth operation of sensitive electronics and appliances. </li>
 				<li>Quiet-Test™ mode for a weekly self test that’s quieter than other brands.</li>
 				<li>The most environmentally friendly generator on the market - consumes less fuel and releases fewer emissions.</li>
-			</ul><br /><br />
+			</ul>
 			Generac's Guardian Series standby generators have earned the Good Housekeeping Seal after review by the Good Housekeeping Research Institute.<br /><br />
+		</div>
+		<div style="float:left">
 			<span class="contentheader">Automatic Transfer Switches</span><br /><br />
 			<img src="images/switch.png" align="left" />
-			Generac designs and manufactures a complete line of automatic transfer switches to meet the requirements of virtually any emergency standby application.<br /><a href="http://www.generac.com" target="_blank">For complete information on Generac Generators, click here</a>
+			Generac designs and manufactures a complete line of automatic transfer switches to meet the requirements of virtually any emergency standby application. Transfer switches are responsible for detecting power failure and for determining when a generator should take on the electric load of the system <br />For more detailed information on transfer switches, click <a href="http://www.generac.com" target="_blank"><u>here</u></a>
+			
+		</div>
+		!-->
+			<div id="sizing" style="float: left">
+			<h2> Generator Sizing Information </h2>
+			<span class="medium">One of the most important challenges when it comes to home standby generators is selecting a generator of the appropriate size. Different sizes of generators are applicable for different power needs. Load balancing is used in many cases to manage distribution of power so that larger systems can be sustained using smaller generators--saving the customer money. <br><br> For general information, feel free to view Generac's sizing guide <a href="files/sizing_guide.pdf" target="_blank"><u>here</u></a>, try out Generac's sizing applet located <a href="http://www.generac.com/residential/sizer/" target="_blank"><u>here</u></a> or for more specific information <a href="mailto:mail@walshelectric.net" target="_blank"><u>contact us</u></a> with any questions or to request a <u>FREE</u> estimate!</span>
+		<br><br>
+	</div>
+		<div id="available_generators" style="float: left">
+			<h2> Generators, Accessories, Services & More </h2>
+			<span class="medium">Walsh Electric is a Generac-authorized dealer and provides a wide range of products and services to meet virtually any generator need. From residential to commercial, air cooled to liquid cooled, and even portable solutions, Walsh Electric can provide a custom solution to meet your specific needs. <br><br>*Select a category from the products & services below to find out more information!</span><br><br>
+
+				<select id="select" onchange="displayInfo()">
+					<option></option>
+					<option>Residential</option>
+					<option>Commercial</option>
+					<option>Portable</option>
+					<option>Accessories</option>
+					<option>Extended Warranties</option>
+					<option>Service & Maintenance</option>
+				</select>
+
+		</div>
+
+		<div id="residential" style="float: left; display: none; padding-bottom: 200px">
+			<h2><u> Residential Generators </u></h2>
+				<p>Walsh Electric offers a wide range of home standby generators of all different sizes.<br>
+					From selected circuits to whole house transfers, air cooled to liquid cooled, Walsh Electric will find an appropriate home standby solution for you!<br><br>
+					*Select one of the families of generators below for more information.</p>
+				<br>
+				<select id="residential_select" onchange="showResidential()">
+					<option></option>
+					<option>Guardian Series</option>
+					<option>QuietSource Series</option>
+					<option>Protector Diesel Series</option>
+				</select>
+
+				<div id="guardian" style="display:none">
+				<h2>Guardian Series</h2>
+				<p>Choose the generator seven out of ten families have already installed. Protect your home or business with the preferred 24/7 backup power protection of Generac. <br><br>*See the table below for information regarding all of the Guardian Series generator solutions available.</p>
+				<table style="border=1" cellspacing="20">
+					<tr>
+						<th>Size (kW)</th>
+						<th>Description</th>
+						<th>Spec. Sheet</th>
+					</tr>
+					<tr>
+						<td>8kW</td>
+						<td><p><span style="font-size: 12px">Provides essential circuit power protection for your home, ensuring the necessities remain powered during an outage. The most affordable automatic standby generator on the market offers protection for half the cost of central air conditioning.</span></p></td>
+						<td><a href="files/spec_sheets/residential/guardian/8kW.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					<tr>
+						<td>11kW</td>
+						<td><p><span style="font-size: 12px">Provides essential circuit power protection for your home, ensuring the necessities remain powered during an outage. Has the ability to backup a 3-ton air conditioner, well pump or water heater, and the main rooms of your house.</span></p></td>
+						<td><a href="files/spec_sheets/residential/guardian/11kW.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					<tr>
+						<td>14kW</td>
+						<td><p><span style="font-size: 12px">Provides essential circuit power protection for your home, ensuring the necessities remain powered during an outage. This unit is powerful enough to backup a 4 or 5 ton air conditioner in addition to your home office, garage or additional bedrooms or baths.</span></p> </td>
+						<td><a href="files/spec_sheets/residential/guardian/14kW.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					<tr>
+						<td>17kW</td>
+						<td><p><span style="font-size: 12px">Provides essential circuit power protection for your home, ensuring the necessities remain powered during an outage or up to whole house coverage when paired with one of Generac’s load shedding devices. Capable of backing up a five ton air conditioner. </span></p></td>
+						<td><a href="files/spec_sheets/residential/guardian/17kW.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					<tr>
+						<td>20kW</td>
+						<td><p><span style="font-size: 12px">One of the most powerful air-cooled generators on the market today, this unit provides whole house power protection for many homes. In addition to essential circuit coverage, the 20 kW unit can back up multiple air conditioners and remaining rooms in your home like home theaters and offices.</span></p></td>
+						<td><a href="files/spec_sheets/residential/guardian/20kW.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					<tr>
+						<td>25kW</td>
+						<td><p><span style="font-size: 12px">The solid, reliable, increased horsepower of an automotive-style, liquid cooled engine provides whole house power protection for larger homes and essential circuit protection for small and medium businesses such as gas stations, restaurants and offices.</span></p></td>
+						<td><a href="files/spec_sheets/residential/guardian/25kW.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					<tr>
+						<td>30kW</td>
+						<td><p><span style="font-size: 12px">Solid, reliable, increased horsepower of an automotive-style, liquid cooled engine provides whole house power protection for larger homes and essential circuit protection for small and medium businesses such as convenience stores, restaurants and offices.</span></p></td>
+						<td><a href="files/spec_sheets/residential/guardian/30kW.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					<tr>
+						<td>45kW</td>
+						<td><p><span style="font-size: 12px">Solid, reliable, increased horsepower of an automotive-style, liquid cooled engine provides whole house power protection for larger homes and essential circuit protection for small and medium businesses such as pharmacies, restaurants and municipal buildings.</span></p></td>
+						<td><a href="files/spec_sheets/residential/guardian/45kW.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					<tr>
+						<td>60kW</td>
+						<td><p><span style="font-size: 12px">Solid, reliable, increased horsepower of an automotive-style, liquid cooled engine provides whole house power protection for larger homes and essential circuit protection for small and medium businesses such as retail centers, restaurants, churches and offices. </span></p></td>
+						<td><a href="files/spec_sheets/residential/guardian/60kW.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+				</table>
+			</div>
+
+			<div id="quietsource" style="display: none">
+				<h2>QuietSource Series</h2>
+				<p>The strong, silent type. Premium features are standard on our QuietSource series, the ideal solution for large-residential to medium-commercial applications.<br><br>*See the table below for information regarding all of the QuietSource Series generator solutions available.</p>
+
+				<table cellspacing="20">
+					<tr>
+						<th>Size (kW)</th>
+						<th>Description</th>
+						<th>Spec. Sheet</th>
+					</tr>
+					<tr>
+						<td>22kW</td>
+						<td><p><span style="font-size: 12px">Keep your power and the peace with the QuietSource 22 kW. Packing a lot of power into a smaller footprint with less noise, ideal applications include larger homes, gas stations, convenience stores and other small businesses.</span></p></td>
+						<td><a href="files/spec_sheets/residential/quietsource/22kW.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					<tr>
+						<td>27kW</td>
+						<td><p><span style="font-size: 12px">Keep your power and the peace with the QuietSource 27 kW. Packing a lot of power into a smaller footprint with less noise, ideal applications include larger homes, gas stations, restaurants and other small businesses.</span></p></td>
+						<td><a href="files/spec_sheets/residential/quietsource/27kW.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					<tr>
+						<td>36kW</td>
+						<td><p><span style="font-size: 12px">Keep your power and the peace with the QuietSource 36 kW. Packs a lot of power into a smaller footprint with less noise than standard liquid cooled units. Ideal applications include larger homes, convenience stores, restaurants and other small or medium sized businesses.</span></p></td>
+						<td><a href="files/spec_sheets/residential/quietsource/36kW.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					<tr>
+						<td>48kW</td>
+						<td><p><span style="font-size: 12px">Keep your power and the peace with the QuietSource 48 kW. Packs a lot of power into a smaller footprint with less noise than standard liquid cooled units. Ideal applications include larger homes, convenience stores, restaurants and other small or medium sized businesses.</span></p></td>
+						<td><a href="files/spec_sheets/residential/quietsource/48kW.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+				</table>
+
+			</div>
+
+			<div id="protector_diesel" style="display: none">
+				<h2>Protector™ Diesel Series</h2>
+				<p>Protector™ Series diesel standby generators feature Code Ready, a set of preconfigured options for ready compliance with a variety of common municipal codes for diesel standby generators, as well as a wide variety of accessories to ensure that your generator meets any required codes.<br><br>*See the table below for information regarding all of the Protector Diesel Series generator solutions available.</p>
+
+				<table cellspacing="20">
+					<tr>
+						<th>Size (kW)</th>
+						<th>Description</th>
+						<th>Spec. Sheet</th>
+					</tr>
+					<tr>
+						<td>15kW-50kW</td>
+						<td><p><span style="font-size: 12px">All the conveniences of modern living—heat, central air, refrigeration, communication—are nothing without power. When the power supply is disrupted, our lives and businesses can come to a sudden halt. An automatic standby generator protects you from power failures, restoring power within seconds of an outage, so you can have peace of mind and the power you need.
+							<br><br>
+						Generac’s new Protector® Series diesel generators raise the bar for residential and light commercial diesel generators. Building and zoning codes can vary wildly from one region to another. In the past, the only answer was to order expensive, custom-configured solutions. Until now.
+							<br><br>
+						Generac’s diesel-powered Protector Series features Code Ready, a set of popular preconfigured options and a range of code-driven accessories, so you can feel confident that your generator will be able to conform to the required local codes. The Protector Series is versatile, adaptable, meets UL requirements, and is an affordable optional standby diesel generator for your backup power needs.</span></p></td>
+						<td><a href="files/spec_sheets/residential/protector/15kW-50kW.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+				</table>
+
+			</div>
+
+		</div>
+
+	<div id="commercial" style="float: left; display: none; padding-bottom:200px">
+			
+			<h2>Commercial Generators</h2>
+			<p>
+					<b><span style="font-size:12px">COST EFFECTIVE BACKUP POWER FOR BUSINESS</b><br>
+					Generac makes it easy and cost effective to customize the exact backup power system your business requires. These generators often pay for themselves in one power outage, easily backing up a wide range of applications. Backup your large home or business and everything in between.<br><br>
+
+					<b>What can automatic backup power provide your business in a power outage?<b><br><br>
+					<ul>
+					<li><b><i>Keep your security systems powered -</b></i> protect your business from theft during a power outage</li>
+					<li><b><i>Insure against the cost of lost refrigerated goods -</b></i> refrigerators and freezers never lose power</li>
+					<li><b><i>Keep your customers -</b></i> your doors stay open to serve their needs in an emergency
+					Gain a competitive advantage-</b></i> if your competitors are closed their customers will come to you</li>
+					<li><b><i>Safety for the community-</b></i> schools, churches and municipal buildings can provide safety in an emergency</li>
+					</ul>
+					<br>
+					*Select a family of generators below to find out more information.
+					</span></p>
+
+			<select id="commercial_select" onchange="showCommercial()">
+					<option></option>
+					<option>Commercial Series</option>
+					<option>QuietSource Series</option>
+					<option>Protector Series</option>
+					<option>Mobile Power Generators</option>
+				</select>
+
+				<div id="commercial_series" style="display:none">
+				<h2>Commercial Series</h2>
+				<p><span style="font-size:12px">Capable of providing full power protection for large homes and commercial applications from gas stations and convenience stores to restaurants, schools, assisted living centers, and municipal buildings.<br><br>*See the table below for specification sheets for each available model, ranging from 22kW-150kW. </span></p>
+
+				<table cellspacing="25">
+					<tr>
+						<th style="width:400px; text-align:left">Size (kW)</th>
+						<th style="width:400px; text-align:left">Spec. Sheet</th>
+					</tr>
+					<tr>
+						<td>22kW</td>
+						<td><a href="files/spec_sheets/commercial/commercial_series/22_27_36_48kW.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					<tr>
+						<td>25kW</td>
+						<td><a href="files/spec_sheets/commercial/commercial_series/25_30_45_60kW.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					<tr>
+						<td>27kW</td>
+						<td><a href="files/spec_sheets/commercial/commercial_series/22_27_36_48kW.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+						<tr>
+						<td>30kW</td>
+						<td><a href="files/spec_sheets/commercial/commercial_series/25_30_45_60kW.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					<tr>
+						<td>36kW</td>
+						<td><a href="files/spec_sheets/commercial/commercial_series/22_27_36_48kW.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					<tr>
+						<td>45kW</td>
+						<td><a href="files/spec_sheets/commercial/commercial_series/25_30_45_60kW.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					<tr>
+						<td>48kW</td>
+						<td><a href="files/spec_sheets/commercial/commercial_series/22_27_36_48kW.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+						<tr>
+						<td>60kW</td>
+						<td><a href="files/spec_sheets/commercial/commercial_series/25_30_45_60kW.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					<tr>
+						<td>70kW-150kW</td>
+						<td><a href="files/spec_sheets/commercial/commercial_series/70-150kW.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+				</table>
+			</div>
+
+			<div id="quietsource_series" style="display:none">
+				<h2>QuietSource Series</h2>
+				<p><span style="font-size: 12px"><b>THE PREMIUM STANDBY GENERATOR<b><br>
+					Premium features are standard for the ultimate standby generator. Thanks to the low-speed engine, it’s so quiet you’ll forget you own a generator until you need it. Ideal for large residential and small to medium commercial applications.<br>
+
+					<ul>
+					<li><i><b>Low speed, automotive style liquid-cooled engine</i></b> runs at only 1800 rpm during a power outage for a substantially quieter generator, greater fuel efficiency, and longer engine and alternator life.</li>
+					<li><i><b>Super quiet, super efficient, patented Quiet-Test™ mode</i></b> for a weekly test mode that’s quieter than other brands, consumes less fuel and helps make your Generac generator the most environmentally friendly on the market.</li>
+					<li><i><b>Standard aluminum, all-weather enclosure</i></b> provides the ultimate protection from the elements. Aluminum’s natural corrosion resistance prolongs the life of your generator and is recommended for salt-air, coastal locations.</li></ul></span><br>
+					*See the table below for information regarding all of the commercial QuietSource generator solutions available.<br> </p>
+
+					<table cellspacing="20">
+						<tr>
+							<th>Size (kW)</th>
+							<th>Description</th>
+							<th>Spec. Sheet</th>
+						</tr>
+						<tr>
+							<td>22kW</td>
+							<td><p><span style="font-size: 12px">Keep your power and the peace with the QuietSource 22 kW. Packing a lot of power into a smaller footprint with less noise, ideal applications include larger homes, gas stations, convenience stores and other small businesses.</span></td>
+							<td><a href="files/spec_sheets/commercial/quietsource_series/22_27_36_48kW.pdf" target="_blank"><u>here</u></a></td>
+						</tr>
+						<tr>
+							<td>27kW</td>
+							<td><p><span style="font-size:12px">Keep your power and the peace with the QuietSource 27 kW. Packing a lot of power into a smaller footprint with less noise, ideal applications include larger homes, gas stations, restaurants and other small businesses.</span></p></td>
+							<td><a href="files/spec_sheets/commercial/quietsource_series/22_27_36_48kW.pdf" target="_blank"><u>here</u></a></td>
+						</tr>
+						<tr>
+							<td>36kW</td>
+							<td><p><span style="font-size:12px">Keep your power and the peace with the QuietSource 36 kW. Packs a lot of power into a smaller footprint with less noise than standard liquid cooled units. Ideal applications include larger homes, convenience stores, restaurants and other small or medium sized businesses</span></p></td>
+							<td><a href="files/spec_sheets/commercial/quietsource_series/22_27_36_48kW.pdf" target="_blank"><u>here</u></a></td>
+						</tr>
+						<tr>
+							<td>48kW</td>
+							<td><p><span style="font-size:12px">Keep your power and the peace with the QuietSource 48 kW. Packs a lot of power into a smaller footprint with less noise than standard liquid cooled units. Ideal applications include larger homes, convenience stores, restaurants and other small or medium sized businesses.</span></p></td>
+							<td><a href="files/spec_sheets/commercial/quietsource_series/22_27_36_48kW.pdf" target="_blank"><u>here</u></a></td>
+						</tr>
+					</table>
+			</div>
+
+			<div id="mobile_power_generators" style="display:none">
+				<h2>Mobile Power Generators</h2>
+				<p><span style="font-size: 12px">Generac Mobile Power solutions are ideal for a variety of auxiliary power applications with a need for a reliable temporary power supply, or for which a permanently installed generator isn’t feasible. These include construction, gas and oil field operations, telecommunications, and small businesses. Use Generac Mobile Power generators with a transfer switch for backup power in an emergency. No matter the requirements, Generac Mobile Power solutions are fully customizable and can go wherever they are needed, from desert heat to arctic cold.<br><br>*See the table below for information regarding all of the Mobile Power generator solutions available.</p></span>
+
+				<table cellspacing="25">
+					<col width="100">
+					<col width="600">
+					<col width="100">
+					<tr>
+						<th>Size (kW)</th>
+						<th>Description</th>
+						<th>Spec. Sheet</th>
+					</tr>
+					<tr>
+						<td>Mobile Lite Generator<br>(6kW-20kW)</td>
+						<td><p><span style="font-size:12px">Generac mobile lite generators provide cost-effective auxiliary power solutions that are reliable and easy to use. Ideal for construction applications—including delivering power to remote jobsite trailers—or emergency backup power for convenience stores and other small businesses, Generac mobile lite generators can deliver power where and when it is needed.</span></p></td>
+						<td><span style="line-height:25px; font-size:12px"><a href="files/spec_sheets/commercial/mobile_power_generators/mobile_lite/MLG-8.pdf" target="_blank"><u>MLG-8</u></a><br><a href="files/spec_sheets/commercial/mobile_power_generators/mobile_lite/MLG-15.pdf" target="_blank"><u>MLG-15</u></a><br><a href="files/spec_sheets/commercial/mobile_power_generators/mobile_lite/MLG-20.pdf" target="_blank"><u>MLG-20</u></a><br><a href="files/spec_sheets/commercial/mobile_power_generators/mobile_lite/MLG-25.pdf" target="_blank"><u>MLG-25</u></a></span></td>
+					</tr>
+					<tr>
+						<td>Mobile Generators<br>(20kW-408kW)</td>
+						<td><p><span style="font-size:12px">Generac mobile generator sets offer a wide range of power output choices for even the most demanding applications. Available in 20kW single phase up to 408kW three phase, Generac mobile generators boast an advanced digital controller that provides simple push-button operation with an easy-to-read display.</span></p></td>
+						<td><span style="line-height:25px; font-size:12px">
+							<a href="files/spec_sheets/commercial/mobile_power_generators/mobile/MMG-25.pdf" target="_blank"><u>MMG-25</u></a><br>
+							<a href="files/spec_sheets/commercial/mobile_power_generators/mobile/MMG-35.pdf" target="_blank"><u>MMG-35</u></a><br>
+							<a href="files/spec_sheets/commercial/mobile_power_generators/mobile/MMG-45.pdf" target="_blank"><u>MMG-45</u></a><br>
+							<a href="files/spec_sheets/commercial/mobile_power_generators/mobile/MMG-100.pdf" target="_blank"><u>MMG-100</u></a><br>
+							<a href="files/spec_sheets/commercial/mobile_power_generators/mobile/MMG-120.pdf" target="_blank"><u>MMG-120</u></a><br>
+							<a href="files/spec_sheets/commercial/mobile_power_generators/mobile/MMG-130.pdf" target="_blank"><u>MMG-130</u></a><br>
+							<a href="files/spec_sheets/commercial/mobile_power_generators/mobile/MMG-150.pdf" target="_blank"><u>MMG-150</u></a><br>
+							<a href="files/spec_sheets/commercial/mobile_power_generators/mobile/MMG-175.pdf" target="_blank"><u>MMG-175</u></a><br>
+							<a href="files/spec_sheets/commercial/mobile_power_generators/mobile/MMG-185.pdf" target="_blank"><u>MMG-185</u></a><br>
+							<a href="files/spec_sheets/commercial/mobile_power_generators/mobile/MMG-205.pdf" target="_blank"><u>MMG-205</u></a><br>
+							<a href="files/spec_sheets/commercial/mobile_power_generators/mobile/MMG-235.pdf" target="_blank"><u>MMG-235</u></a><br>
+							<a href="files/spec_sheets/commercial/mobile_power_generators/mobile/MMG-320" target="_blank"><u>MMG-320</u></a><br>
+							<a href="files/spec_sheets/commercial/mobile_power_generators/mobile/MMG-405.pdf" target="_blank"><u>MMG-405</u></a><br>
+							<a href="files/spec_sheets/commercial/mobile_power_generators/mobile/MMG-465.pdf" target="_blank"><u>MMG-465</u></a><br>
+						</span></td>
+					</tr>
+				</table>
+
+			</div>
+
+			<div id="protector_series" style="display:none">
+				<h2>Protector Series</h2>
+				<p><span style="font-size: 12px"><b>Versatile, adaptable and affordable diesel standby generators for home and business</b><br><br>
+ 
+				Generac once again raises the bar for residential and light commercial diesel generators with the new Protector® Series diesel generator. To address the problem of building and zoning codes that can vary wildly from one region to another, our Protector Series features a set of popular preconfigured options that ensures that your generator will be easily adaptable to a variety of municipal codes for standby generators. Even better, Generac offers a wide range of code-driven accessories, so you can feel confident that your generator will be able to conform to the required local codes for your large home or small business, no matter what.<br><br>*See the table below for information regarding all Protector Series generator solutions. </span></p>
+
+				<table cellspacing="25px">
+					<tr>
+						<th>Size (kW)</th>
+						<th>Description</th>
+						<th>Spec. Sheet</th>
+					</tr>
+					<tr>
+						<td>15-50kW</td>
+						<td><p><span style="font-size:12px">All the conveniences of modern living—heat, central air, refrigeration, communication—are nothing without power. When the power supply is disrupted, our lives and businesses can come to a sudden halt. An automatic standby generator protects you from power failures, restoring power within seconds of an outage, so you can have peace of mind and the power you need.<br><br>
+
+						Generac’s new Protector® Series diesel generators raise the bar for residential and light commercial diesel generators. Building and zoning codes can vary wildly from one region to another. In the past, the only answer was to order expensive, custom-configured solutions. Until now.<br><br>
+
+						Generac’s diesel-powered Protector Series features Code Ready, a set of popular preconfigured options and a range of code-driven accessories, so you can feel confident that your generator will be able to conform to the required local codes. The Protector Series is versatile, adaptable, meets UL requirements, and is an affordable optional standby diesel generator for your backup power needs.</span></p></td>
+						<td><a href="files/spec_sheets/commercial/protector_series/15-50kW.pdf" target="_blank"><u>here</a></u></td>
+					</tr>
+				</table>
+			</div>
+
+		</div>
+
+		<div id="portable" style="float: left; display: none; padding-bottom:200px">
+			<h2>Portable Generators</h2>
+			<p><span style="font-size:12px">Get power when and where you need it, no matter where you go. Generac’s rugged, dependable portable generators are designed to deliver power wherever you are—from tailgate parties to construction sites. With sizes up to 17500 watts, you can take your power with you wherever you need it.<br><br> *Select a family of portable residential generators below to find out more information.<br></span></p>
+
+			<select id="portable_select" onchange="showPortable()">
+				<option></option>
+				<option>GP Series</option>
+				<option>XG Series</option>
+				<option>XP Series</option>
+				<option>iX Series</option>
+				<option>LP Series</option>
+			</select>
+
+			<div id="gp_series" style="display:none">
+				<h2>GP Series</h2>
+				<p><span style="font-size:12px">POWER THE FUN STUFF OR COVER AN EMERGENCY<br>
+				With a GP Series portable generator, you get affordable reliability and features not usually found on basic portable models. That's why these generators are a favorite for home use, camping, job sites, or outdoor events.<br><br>
+
+				Features common to GP Series generators include:<br><br>
+
+				<ul><li>Hardened steel tube cradle for added durability and strength.</li>
+				<li>Low-oil shutdown automatically safeguards engine from damage.</li>
+				<li>Generac's OHV engine with splash lubrication provides a long engine life. </li>
+				<li>Large-capacity fuel tank with incorporated fuel gauge provides durability and <li>extended run times.</li>
+				<li>Covered outlets provides added protection from the environment and rugged working conditions.</li>
+				<li>Heavy-duty, never-flat wheels for reliable portability.</li></ul><br> *See the table below for information regarding all of the GP series generators available.</span></p>
+				<table cellspacing="20">
+					<col width="100">
+					<col width="600">
+					<col width="100">
+					<tr>
+						<th>Model</th>
+						<th>Description</th>
+						<th>Spec. Sheet</th>
+					</tr>
+					<tr>
+						<td>GP1800</td>
+						<td><span style="font-size: 12px">An affordable solution for recreation applications. Perfect size for tailgating,camping and power tool use.</span></td>
+						<td><a href="files/spec_sheets/portable/gp_series/GP1800.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					<tr>
+						<td>GP3250</td>
+						<td><span style="font-size: 12px">An affordable solution for recreational applications. Perfect size for tailgating,camping and power tool use.</span></td>
+						<td><a href="files/spec_sheets/portable/gp_series/GP3250.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					<tr>
+						<td>GP5500</td>
+						<td><span style="font-size: 12px">The GP 5500 is the perfect solution for tailgating, camping, power tool use—even emergency backup power.</span></td>
+						<td><a href="files/spec_sheets/portable/gp_series/GP5500.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					<tr>
+						<td>GP6500(E)</td>
+						<td><span style="font-size: 12px">An affordable solution for many different applications, the GP6500 (pull start) and GP6500E (electric start) are ideal for tailgating, camping, power tool use, and emergency home backup power.</span></td>
+						<td><a href="files/spec_sheets/portable/gp_series/GP6500.pdf" target="_blank"><u>6500</u></a><br><a href="files/spec_sheets/portable/gp_series/GP6500E.pdf" target="_blank"><u>6500E</u></a></td>
+					</tr>
+					<tr>
+						<td>GP7500E</td>
+						<td><span style="font-size: 12px">Choose the affordable, reliable GP7500E (electric start) for recreational applications, job sites and emergency backup power.</span></td>
+						<td><a href="files/spec_sheets/portable/gp_series/GP7500E.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					<tr>
+						<td>GP15000E</td>
+						<td><span style="font-size: 12px">A portable unit ideal for applications requiring a large amount of power without being permanent. Ideal for job sites and emergency applications. </span></td>
+						<td><a href="files/spec_sheets/portable/gp_series/GP15000E.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					<tr>
+						<td>GP17500E</td>
+						<td><span style="font-size: 12px">The most powerful portable generator on the market is an exceptional value. Powerful enough to start many 5-ton air conditioning units and can provide power for up to 16 circuits.</span></td>
+						<td><a href="files/spec_sheets/portable/gp_series/GP17500E.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+				</table>
+			</div>
+
+			<div id="xg_series" style="display:none">
+				<h2>XG Series</h2>
+				<p><span style="font-size: 12px">PREMIUM PORTABLE POWER<br>
+The premium quality power and reliable performance of Generac’s XG Series comes from Generac’s OHVI® engine.<br> Depend on this rugged unit to provide years of reliable power to your event or job site.<br><br>
+
+
+				<ul><li><b>The Generac OHVI® </b> engine incorporates full pressure lubrication with automotive style spin on oil filter for longer life engine.</li>
+				<li><b>PowerBar™</b> easily monitors power wattage. </li>
+				<li><b>Illuminated LED control panel </b>for improved visibility.</li>
+				<li><b>Hour meter </b>with maintenace resets tracks usage and monitors maintenance cycles.</li>
+				<li><b>Large-capacity steel fuel tank</b> with incorporated fuel gauge provides durability and extended run times. </li>
+				<li><b>Low-oil pressure shutdown </b>automatically safeguards engine from damage. </li>
+				<li><b>Covered outlets</b> provides added protection from the environment and rugged working conditions.</li>
+				<li><b>Full-wrap, heavy-duty, 1 1/4" steel tube cradle </b>for added durability and strength. </li>
+				<li><b>Heavy-duty, never flat wheels</b> for reliable portability.</li>
+				<li><b>User-friendly design</b> has conveniently placed engine controls for simple operation and east start-up.</li>
+				<li><b>Fold-down, locking handle </b>for sturdy portability and compact storage.</li>
+				<li><b>Single touch electric start,</b> battery included, provides hassle-free start-up.</li>
+				<li><b>Plug-in battery charger jack</b> to keep battery charged and ready to go</li>
+				<li>First oil and maintenance kit included.</li></ul></span><br>*See the table below for information regarding all of the XG series generators available.</p>
+				<table cellspacing="20">
+					<col width="100">
+					<col width="600">
+					<col width="100">
+					<tr>
+						<th>Model</th>
+						<th>Description</th>
+						<th>Spec. Sheet</th>
+					</tr>
+					<tr>
+						<td>XG4000</td>
+						<td><span style="font-size: 12px">This compact yet durable generator offers premium quality power, engineered for high performance using the Generac OHVI engine.</span></td>
+						<td><a href="files/spec_sheets/portable/xg_series/XG4000.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					<tr>
+						<td>XG6500</td>
+						<td><span style="font-size: 12px">Premium quality power is just one advantage of this heavy duty generator engineered for high performance using the Generac OHVI engine.</span></td>
+						<td><a href="files/spec_sheets/portable/xg_series/XG6500.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					<tr>
+						<td>XG7000E</td>
+						<td><span style="font-size: 12px">Premium quality power is just one advantage of this heavy duty generator engineered for high performance using the Generac OHVI engine.</span></td>
+						<td><a href="files/spec_sheets/portable/xg_series/XG7000E.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					<tr>
+						<td>XG8000E</td>
+						<td><span style="font-size: 12px">Premium quality power is just one advantage of this heavy duty generator engineered for high performance using the Generac OHVI engine.</span></td>
+						<td><a href="files/spec_sheets/portable/xg_series/XG8000E.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					<tr>
+						<td>XG10000E</td>
+						<td><span style="font-size: 12px">Plenty of power is just one advantage of this heavy duty generator engineered for high performance using the Generac OHVI engine. Most compact, User Friendly Power Generator.  Easy to move, and one of the most powerful portable units on the market.</span></td>
+						<td><a href="files/spec_sheets/portable/xg_series/XG10000E.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+				</table>
+			</div>
+
+			<div id="xp_series" style="display:none">
+				<h2>XP Series</h2>
+				<p><span style="font-size:12px">TAKE GENERAC TO WORK<br>
+The undisputed workhorse of the portable market, Generac’s NEW professional grade XP Series portable generators are engineered specifically with contractors and construction sites in mind. All models are powered by the Generac OHVI® engine designed specifically for generators and built to withstand extended job site use. The XP Series is noticeably more substantial than most portable generators, sporting impact-resistant cast metal corners and a heavy-duty, hardened steel tube cradle. Integrated handle supports and brackets are engineered as part of the casting for even more durability.<br><br>
+
+Features common to all XP Series portable generators include:<br><br>
+
+<ul><li><b>The Generac OHVI® engine </b> incorporates full pressure lubrication with automotive style spin on oil filter for longer life engine. </li>
+<li><b>TruePower™ Technology </b>provides clean, smooth operation of sensitive electronics, tools, and appliances.</li>
+<li><b>Idle Control </b>reduces noise and conserves fuel for extended run-times. </li>
+<li><b>Full panel GFCI protection </b>meets OSHA safety requirements. </li>
+<li><b>120/240V selector switch </b>provides full 120V power.</li>
+<li><b>Hour meter</b> with maintenance resets tracks ussage and monitors maintenance cycles. </li>
+<li><b>Large-capacity steel fuel tank with incorporated fuel gauge</b> provides durability and extended run times. </li>
+<li><b>Low-oil pressure shutdown </b>automatically safeguards engine from damage. </li>
+<li><b>Covered outlets </b>provides added protection from the environment and rugged working conditions.</li>
+<li><b>Full-wrap, heavy-duty, 1 1/4" steel tube cradle</b> for added durability and strength.</li>
+<li><b>All-terrain, never flat wheels and fold-down locking handle</b> for reliable portability and compact storage (XP4000 - Sold separately).</li>
+<li><b>User-friendly design</b> has conveniently placed engine controls for simple operation and east start-up.</li>
+<li>First oil and maintenance kit included.</li></ul><br><br>*See the table below for more information regarding all of the XP series generators available.</span></p>
+				<table cellspacing="20">
+					<col width="100">
+					<col width="600">
+					<col width="100">
+					<tr>
+						<th>Model</th>
+						<th>Description</th>
+						<th>Spec. Sheet</th>
+					</tr>
+					<tr>
+						<td>XP4000</td>
+						<td><span style="font-size: 12px">This compact yet rugged unit is easy to transport to job sites while still packing power with Generac’s OHVI® engine.</span></td>
+						<td><a href="files/spec_sheets/portable/xp_series/XP4000.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					<tr>
+						<td>XP6500E</td>
+						<td><span style="font-size: 12px">Professional grade with rugged construction and premium features, the XP6500E is ideal for job sites and day long events. </span></td>
+						<td><a href="files/spec_sheets/portable/xp_series/XP6500E.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					<tr>
+						<td>XP8000E</td>
+						<td><span style="font-size: 12px">The XP8000E is professional grade with rugged construction and premium features. This portable generator is perfect for job sites and day long events.</span></td>
+						<td><a href="files/spec_sheets/portable/xp_series/XP8000E.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					<tr>
+						<td>XP10000E</td>
+						<td><span style="font-size: 12px">One of the largest portable generators available, the rugged, professional grade XP10000E offers premium features that make it ideal for job sites and day long events.</span></td>
+						<td><a href="files/spec_sheets/portable/xp_series/XP10000E.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+				</table>
+			</div>
+
+			<div id="ix_series" style="display:none">
+				<h2>iX Portable Inverters</h2>
+				<p><span style="font-size:12px">DESIGNED FOR LIFE ON THE ROAD<br>
+Generac's iX Series inverter technology takes the raw power produced by the generator and passes it through a special electronic microprocessor to provide clean and stable power, safe for computers and other sensitive electronic devices.  Designed for life on the road, its durable, lightweight, compact design with built-in handle offers portable power for camping, tailgating, and recreational use.<br><br>
+
+<ul><li><b>Lightweight & Compact </b> Up to 40% lighter than a standard generator of equal watts.  Built-in-handle - move with minimal effort</li>
+<li><b>Super Quiet & Campground Friendly </b>Full enclosure drastically reduces noise</li>
+<li><b>FlexPowerTM for Operation Mode Options </b>High mode- for large loads or battery charging Eco Mode- to save fuel and reduce noise even more</li>
+<li><b>Electronic Overload Protection </b>Circuit breaker protected</li>
+<li><b>At-a-glance Status Lights</b> LED lights on the control panel indicate system status</li>
+<li><b>Engine Protection </b>Low-oil shutdown detects low oil level and shuts the engine down to prevent potential engine damage</li></ul></span></p>
+				<table cellspacing="20">
+					<col width="100">
+					<col width="600">
+					<col width="100">
+					<tr>
+						<th>Models</th>
+						<th>Description</th>
+						<th>Spec. Sheet</th>
+					</tr>
+					<tr>
+						<td>iX800, iX1400, iX1600, iX2000</td>
+						<td><span style="font-size: 12px">Generac's iX Series inverter technology takes the raw power produced by the generator and passes it through a special electronic microprocessor to provide clean and stable power, safe for computers and other sensitive electronic devices. </span></td>
+						<td><a href="files/spec_sheets/portable/ix_series/iX800.pdf" target="_blank"><u>iX800</u></a><br><a href="files/spec_sheets/portable/ix_series/iX1400.pdf" target="_blank"><u>iX1400</u></a><br>
+							<a href="files/spec_sheets/portable/ix_series/iX1600.pdf" target="_blank"><u>iX1600</u></a><br>
+						<a href="files/spec_sheets/portable/ix_series/iX2000.pdf" target="_blank"><u>iX2000</u></a></td>
+					</tr>
+				</table>
+			</div>
+
+			<div id="lp_series" style="display:none">
+				<h2>LP Series</h2>
+				<p><span style="font-size: 12px">The LP series of portable generators combines all the convenience of safe, stable liquid propane with a breakthrough design that maximizes portability and ease of use. The LP series is the only propane-fueled portable generator that provides an integrated tank holder, eliminating the need to lug heavy canisters of fuel. This innovation results in best-in-class mobility, so users with a range of abilities can maneuver their LP generator quickly and with a minimum of effort.<br><br>*See the table below for all of the LP series generators available. </span></p>
+				<table cellspacing="20">
+					<col width="100">
+					<col width="600">
+					<col width="100">
+					<tr>
+						<th>Model</th>
+						<th>Description</th>
+						<th>Spec. Sheet</th>
+					</tr>
+					<tr>
+						<td>LP3250</td>
+						<td><span style="font-size: 12px">Until now, the only options available in a portable propane generator required the propane tank to be separately carried, where it would then sit to the side of the generator while in use. The LP3250 incorporates a tank holder into the frame itself, so the propane tank sits securely out of the way. It eliminates the hassle of a stand-alone tank and the awkward fuel line that goes along with it.
+Take the LP3250 along for outdoor events, camping or job site use, or use it around the home for projects and emergency backup. </span></td>
+						<td><a href="files/spec_sheets/portable/lp_series/LP3250.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					<tr>
+						<td>LP5500</td>
+						<td><span style="font-size: 12px">The LP 5500 is the smart choice for portable home emergency backup power, utilizing the benefits of propane to provide enough power to cover essential circuits in your home.</span></td>
+						<td><a href="files/spec_sheets/portable/lp_series/LP5500.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+				</table>
+			</div>
+
+
+		</div>
+
+		<div id="accessories" style="float: left; display: none; padding-bottom:200px">
+			<h2>Accessories</h2>
+			<p><span style="font-size: 12px">Walsh Electric carries plenty of accessories to go with all different makes and models of generators! <br><br>*Select a category of accessories below for more information</span></p>
+			<select id="accessory_select" onchange="showAccessory()">
+				<option></option>
+				<option>Batteries</option>
+				<option>Cold Weather</option>
+				<option>Automatic Transfer Switches</option>
+				<option>Manual Transfer Switches</option>
+				<option>Load Management/Switches</option>
+				<option>Maintenance Kits/Conversion Kits</option>
+				<option>Remote Monitoring</option>
+				<option>Car Inverters</option>
+				</select><br><br>
+
+				<div id="batteries" style="display:none">
+					<h2>Batteries</h2>
+					<p><span style="font-size:12px">Install the Generac recommended battery.<br><br>*See information below.</span></p>
+
+					<table cellspacing="20">
+						<col width="100">
+						<col width="600">
+						<col width="100">
+						<tr>
+							<th>Product</th>
+							<th>Description</th>
+							<th>Spec. Sheet</th>
+						</tr>
+						<tr>
+							<td><span style="font-size:12px">26R Wet Cell Battery (8-60kW)</span></td>
+							<td><span style="font-size:12px">Every standby generator requires a battery to start the system. Generac offers the recommended 26R wet cell battery for use with all air-cooled standby product and liquid-cooled standby product 60 kW and below, excluding the 48 kW.</span></td>
+							<td><a href="files/spec_sheets/accessories/batteries/26R.pdf" target="_blank"><u>here</u></a></td>
+						</tr>
+					</table>
+				</div>
+
+				<div id="cold_weather" style="display:none">
+					<h2>Cold Weather</h2>
+					<p><span style="font-size: 12px">Ensure maximum generator 
+performance in freezing conditions. <br><br>*See information below regarding the cold-weather products available.</span></p>
+
+				<table cellspacing="20">
+					<col width="200">
+					<col width="500">
+					<col width="100">
+					<tr>
+						<th>Product</th>
+						<th>Description</th>
+						<th>Spec. Sheet</th>
+					</tr>
+					<tr>
+						<td><span style="font-size:12px">CorePower Cold Weather Kit (7kW)</span></td>
+						<td><span style="font-size:12px">The CorePower cold weather kit is recommended for CorePower units installed in regions where the temperature regularly falls below 32° F.</span></td>
+						<td><a href="files/spec_sheets/accessories/cold_weather/CW_7kW.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					<tr>
+						<td><span style="font-size:12px">Cold Weather Kits (8-150kW)</span></td>
+						<td><span style="font-size:12px">If the temperature regularly falls below 32° F, install a cold weather kit to maintain optimal battery temperature. Kit consists of battery warmer with thermostat built into the wrap.</span></td>
+						<td><a href="files/spec_sheets/accessories/cold_weather/CW_8-20kW.pdf" target="_blank"><u>8-20kW</u></a><br><a href="files/spec_sheets/accessories/cold_weather/CW_22-150kW.pdf" target="_blank"><u>22-150kW</u></a></td>
+					</tr>
+					<tr>
+						<td><span style="font-size:12px">Extreme Cold Weather Kits (22-150kW)</span></td>
+						<td><span style="font-size:12px">Recommended where the temperature regularly falls below 32º F for extended periods of time. Use in conjunction with the appropriate cold weather kit. For liquid cooled units only.</span></td>
+						<td><a href="files/spec_sheets/accessories/cold_weather/XCW_22-150kW.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+				</table>
+
+				</div>
+
+				<div id="automatic_transfer_switches" style="display:none">
+					<h2>Automatic Transfer Switches</h2>
+					<p><span style="font-size:12px">Although the generator creates the power, the transfer switch is really the core of your generator system. It is an electrical panel that allows you to safely connect a generator to your home's electrical circuits and is permanently installed near your main circuit breaker panel. It constantly monitors incoming utility power and determines when a true power outage is occurring, switching from utility power to emergency generator power and back again when utility power returns. Options include transfer switches that provide power to only essential circuits or every circuit for whole-house coverage, and some allow for prioritization of optional circuits or load shedding, such as heating and cooling.<br><br>
+
+By manufacturing our own transfer switches, we ensure they integrate seamlessly with our generators for the perfect system. We offer more options than any other manufacturer to ensure you can customize the exact system you need. Whether it's essential circuit coverage, load shedding or complete whole house coverage, there is a Generac transfer switch for your application.<br><br>The three types of transfer switch setups are described below.<h3>Essential Circuit Coverage</h3>Cover just the basics.<br><br>
+
+By sizing your generator system according to your needs instead of your home’s square footage, you won’t overspend or be surprised by inadequate coverage. Many homeowners choose to cover only their essential circuits during a power outage. Pair a smaller generator with Generac's pre-wired switch, GenReady™ load center or RTS transfer switch for a simple, remarkably economical system that will keep your basics powered during an emergency.<br><br><h3>Managed Whole House Coverage</h3>More coverage with less generator.<br><br>
+
+Gain up to whole-house coverage through smart power management. If it is unlikely you will turn on every appliance at the same time (most people don’t), a smaller generator paired with a Generac Smart power management transfer switch provides whole-house coverage through a managed power solution. The process is simple - non-essential circuits are shed when the generator approaches maximum capacity to eliminate overload, then are cycled back on when essential circuits are satisfied. Give yourself a little more than just the basics without a substantial increase in your investment.<br><br><h3>Complete Whole House Protection</h3>Cover every circuit all the time.<br><br>
+
+Generac's full line of backup power solutions includes generators and transfer switches capable of covering every circuit in any size home for complete whole house protection. The Smart Switch and RTS transfer switches offer home owners options for whole-house coverage when paired with the appropriately sized generator. Never wait for an appliance to take its turn being powered. When the power goes out, everything stays on - no matter how many circuits you have.<br><br> *See the table below for a complete listing of transfer switch solutions for all types of coverage options.</span></p>
+					<table cellspacing="20">
+						<col width="100">
+						<col width="200">
+						<col width="400">
+						<col width="100">
+						<tr>
+							<th>Coverage</th>
+							<th>Product</th>
+							<th>Description</th>
+							<th>Spec. Sheet</th>
+						</tr>
+						<tr>
+							<td><span style="font-size:12px">Essential Circuits</span></td>
+							<td><span style="font-size:12px">Pre-Wired Switch</span></td>
+							<td><span style="font-size:12px">Generac’s pre-wired switch is an automatic transfer switch and distributed load center that backs up selected circuits for essential circuit coverage. Pre-wired for the easiest and least expensive installation on the market, they are an excellent value when whole house coverage is unnecessary.</span></td>
+							<td><span style="font-size:12px"><a href="files/spec_sheets/accessories/automatic_transfer_switches/pre_wired_switch.pdf" target="_blank"><u>here</u></a></span></td>
+						</tr>
+						<tr>
+							<td><span style="font-size:12px">Essential Circuits</span></td>
+							<td><span style="font-size:12px">GenReady Load Center</span></td>
+							<td><span style="font-size:12px">New home construction or renovations with electrical upgrades are the ideal time to install Generac’s GenReadyTM  Load Center. Because it's a hybrid electrical distribution panel combined with the transfer switch, you will enjoy substantial savings on installation and a simplified generator system.</span></td>
+							<td><span style="font-size:12px"><a href="files/spec_sheets/accessories/automatic_transfer_switches/gen_ready_load_center.pdf" target="_blank"><u>here</u></a></span></td>
+						</tr>
+						<tr>
+							<td><span style="font-size:12px">Essential Circuits</span></td>
+							<td><span style="font-size:12px">RTS Transfer Switch</span></td>
+							<td><span style="font-size:12px">With the RTS transfer switch, you can choose to cover every circuit all the time or only essential circuits depending upon the generator with which it is paired. RTS open transition transfer switches are ideal for residential, commercial and light industrial applications.</span></td>
+							<td><span style="font-size:12px"><a href="files/spec_sheets/accessories/automatic_transfer_switches/rts_100-400A.pdf" target="_blank"><u>100-400A</u></a><br><br><a href="files/spec_sheets/accessories/automatic_transfer_switches/rts_600-800A.pdf" target="_blank"><u>600-800A</u></a></span></td>
+						</tr>
+						<tr>
+							<td><span style="font-size:12px">Managed Whole House</span></td>
+							<td><span style="font-size:12px">LTS Switch</span></td>
+							<td><span style="font-size:12px">Get more coverage from a smaller generator paired with the load shedding capabilities of the LTS transfer switch, the answer when more than six large loads need to be managed.</span></td>
+							<td><span style="font-size:12px"><a href="files/spec_sheets/accessories/automatic_transfer_switches/lts_switch.pdf" target="_blank"><u>here</u></a></span></td>
+						</tr>
+						<tr>
+							<td><span style="font-size:12px">Managed Whole House</span></td>
+							<td><span style="font-size:12px">Generac Smart Switch</span></td>
+							<td><span style="font-size:12px">The Generac Smart Switch is the smartest transfer switch on the market. Engineered with Generac’s patented Digital Power Management (DPM) technology, it allows for more coverage with a smaller generator through smart load management. This advanced power management technology is standard, unlike competitive models that require additional hardware and investment to add a power management option.</span></td>
+							<td><span style="font-size:12px"><a href="files/spec_sheets/accessories/automatic_transfer_switches/generac_smart_switch.pdf" target="_blank"><u>here</u></a></span></td>
+						</tr>
+						<tr>
+							<td><span style="font-size:12px">Managed Whole House</span></td>
+							<td><span style="font-size:12px">Power Management Module (PMM)</span></td>
+							<td><span style="font-size:12px">Through the use of the PMMs in conjunction with any of the 100-800 amp, single phase switches, household or business loads can be intelligently managed enabling the use of a smaller, more efficient generator system. Up to four PMMs can be used with a single switch. Both the PMM Starter Kit and individual PMMs have a one year limited warranty.</span></td>
+							<td><span style="font-size:12px"><a href="files/spec_sheets/accessories/automatic_transfer_switches/pmm.pdf" target="_blank"><u>here</u></a></span></td>
+						</tr>
+						<tr>
+							<td><span style="font-size:12px">Complete Whole House</span></td>
+							<td><span style="font-size:12px">Generac Smart Switch</span></td>
+							<td><span style="font-size:12px">The Generac Smart Switch is the smartest transfer switch on the market. Engineered with Generac’s patented Digital Power Management (DPM) technology, it allows for more coverage with a smaller generator through smart load management. This advanced power management technology is standard, unlike competitive models that require additional hardware and investment to add a power management option. </span></td>
+							<td><span style="font-size:12px"><a href="files/spec_sheets/accessories/automatic_transfer_switches/generac_smart_switch2.pdf" target="_blank"><u>here</u></a></span></td>
+						</tr>
+							<tr>
+							<td><span style="font-size:12px">Complete Whole House</span></td>
+							<td><span style="font-size:12px">RTS Series</span></td>
+							<td><span style="font-size:12px">With the RTS transfer switch, you can choose to cover every circuit all the time or only essential circuits when paired with a generator sized to your application. RTS open transition transfer switches are ideal for residential, commercial and light industrial applications.</span></td>
+							<td><span style="font-size:12px"><a href="files/spec_sheets/accessories/automatic_transfer_switches/rts_100-400A2.pdf" target="_blank"><u>100-400A</u></a><br><br><br><a href="files/spec_sheets/accessories/automatic_transfer_switches/rts_600-800A2.pdf" target="_blank"><u>600-800A</u></a></span></td>
+						</tr>
+							<tr>
+							<td><span style="font-size:12px">Complete Whole House</span></td>
+							<td><span style="font-size:12px">CSA Approved</span></td>
+							<td><span style="font-size:12px">Generac offers the only CSA approved service rated transfer switches, utilizing patent pending technology to allow for use in Canadian whole-house applications.</span></td>
+							<td><span style="font-size:12px"><a href="files/spec_sheets/accessories/automatic_transfer_switches/csa.pdf" target="_blank"><u>here</u></a></span></td>
+						</tr>
+					</table>
+					
+				</div>
+
+				<div id="manual_transfer_switches" style="display:none">
+					<h2>Manual Transfer Switches & Manual Transfer Switch Kits</h2>
+					<p><span style="font-size:12px">Safely and easily deliver power from your portable generator to your home’s electrical panel during a power outage with a Generac manual transfer switch. Once installed, our manual transfer switch eliminates the need to run multiple extension cords through open windows and doors and allows you to safely power hard-wired items like your furnace or well-pump.<br><br>*See the table below for more information regarding manual transfer switches and manual transfer switch <u>kits</u> available.</span></p>
+
+					<table cellspacing="20">
+						<col width="500">
+						<col width="50">
+						<col width="50">
+						<col width="200">
+						<tr>
+							<th>Product</th>
+							<th>Kit? (y/n)</th>
+							<th>Model #</th>
+							<th>Spec. Sheet</th>
+						</tr>
+						<tr>
+							<td><span style="font-size:12px">30 Amp Pre-Wired (Resin Power Inlet Box)</span></td>
+							<td><span style="font-size:12px">yes</span></td>
+							<td><span style="font-size:12px">6294</span></td>
+							<td><a href="files/spec_sheets/accessories/manual_transfer_switches/30AMPA.pdf" target="_blank"><u>here</u></a></td>
+						</tr>
+						<tr>
+							<td><span style="font-size:12px">30 Amp Pre-Wired (Aluminum Power Inlet Box)</span></td>
+							<td><span style="font-size:12px">yes</span></td>
+							<td><span style="font-size:12px">6408</span></td>
+							<td><a href="files/spec_sheets/accessories/manual_transfer_switches/30AMPB.pdf" target="_blank"><u>here</u></a></td>
+						</tr>
+							<tr>
+							<td><span style="font-size:12px">30 Amp</span></td>
+							<td><span style="font-size:12px">yes</span></td>
+							<td><span style="font-size:12px">6295</span></td>
+							<td><a href="files/spec_sheets/accessories/manual_transfer_switches/30AMPC.pdf" target="_blank"><u>here</u></a></td>
+						</tr>
+						</tr>
+							<tr>
+							<td><span style="font-size:12px">50 Amp</span></td>
+							<td><span style="font-size:12px">yes</span></td>
+							<td><span style="font-size:12px">6296</span></td>
+							<td><a href="files/spec_sheets/accessories/manual_transfer_switches/50AMP.pdf" target="_blank"><u>here</u></a></td>
+						</tr>
+						</tr>
+							<tr>
+							<td><span style="font-size:12px">Single-Circuit</span></td>
+							<td><span style="font-size:12px">no</span></td>
+							<td><span style="font-size:12px">6375, 6377</span></td>
+							<td><a href="files/spec_sheets/accessories/manual_transfer_switches/single_circuit.pdf" target="_blank"><u>here</u></a></td>
+						</tr>
+						</tr>
+							<tr>
+							<td><span style="font-size:12px">Select-Circuit</span></td>
+							<td><span style="font-size:12px">no</span></td>
+							<td><span style="font-size:12px">6378, 6380</span></td>
+							<td><a href="files/spec_sheets/accessories/manual_transfer_switches/select_circuit.pdf" target="_blank"><u>here</u></a></td>
+						</tr>
+						</tr>
+							<tr>
+							<td><span style="font-size:12px">Select-Circuit</span></td>
+							<td><span style="font-size:12px">no</span></td>
+							<td><span style="font-size:12px">6376</span></td>
+							<td><a href="files/spec_sheets/accessories/manual_transfer_switches/select_circuit2.pdf" target="_blank"><u>here</u></a></td>
+						</tr>
+						</tr>
+							<tr>
+							<td><span style="font-size:12px">Select-Circuit</span></td>
+							<td><span style="font-size:12px">no</span></td>
+							<td><span style="font-size:12px">6379, 6381</span></td>
+							<td><a href="files/spec_sheets/accessories/manual_transfer_switches/select_circuit3.pdf" target="_blank"><u>here</u></a></td>
+						</tr>
+						</tr>
+							<tr>
+							<td><span style="font-size:12px">Whole House</span></td>
+							<td><span style="font-size:12px">no</span></td>
+							<td><span style="font-size:12px">6335, 6382</span></td>
+							<td><a href="files/spec_sheets/accessories/manual_transfer_switches/whole_house.pdf" target="_blank"><u>here</u></a></td>
+						</tr>
+					</table>
+
+				</div>
+
+				<div id="load_management" style="display:none">
+					<h2>Load Management/Switches</h2>
+					<p><span style="font-size:12px">We have load management devices to help build the custom solution for your power needs while requiring less overall power. <br><br>*See the table below for information on these devices.</span></p>
+
+					<table cellspacing="20">
+						<col width="200">
+						<col width="500">
+						<col width="100">
+						<tr>
+							<th>Product</th>
+							<th>Description</th>
+							<th>Spec. Sheet</th>
+						</tr>
+						<tr>
+							<td><span style="font-size:12px">PMM Module</span></td>
+							<td><span style="font-size:12px">Through the use of the PMMs in conjunction with any of the 100-800 amp, single phase switches, household or business loads can be intelligently managed enabling the use of a smaller, more efficient generator system. Up to four PMMs can be used with a single switch. Both the PMM Starter Kit and individual PMMs have a one year limited warranty.</span></td>
+							<td><span style="font-size:12px"><a href="files/spec_sheets/accessories/load_management/pmm.pdf" target="_blank"><u>here</u></a></span></td>
+						</tr>
+						<tr>
+							<td><span style="font-size:12px">Auxiliary Transfer Switch Contact Kit</span></td>
+							<td><span style="font-size:12px">Manage your standby power supply more efficiently.  The auxiliary transfer switch contact kit allows the transfer switch to lock out a single large electrical load you may not need in the event of an outage-such as an electric furnace or multiple central air conditioning units.  This allows you to use a smaller generator for standby power and helps eliminate the potential for overload.
+
+							</span></td>
+							<td><span style="font-size:12px"><a href="files/spec_sheets/accessories/load_management/ats.pdf" target="_blank"><u>here</u></a></span></td>
+						</tr>
+					</table>
+				</div>
+
+				<div id="maintenance_kits" style="display:none">
+					<h2>Maintenance Kits/Conversion Kits</h2>
+					<p><span style="font-size:12px">We carry maintenance kits for every generator model that we sell. We also carry conversion kits for converting from 120V to 240V, perfect for off-grid energy systems. <br><br>A scheduled maintenance program ensures the generator system is always in top operating condition and warranty requirements are being met. Generac's scheduled maintenance kits provide all the hardware necessary to perform complete routine maintenance on a Generac automatic standby generator. Oil must be purchased separately based upon manufacturer recommendations listed below. Maintenance is recommended at every 200 hours or 2 years.
+Kit contents may vary by model.<br><br>*See the table below for more information regarding conversion and maintenance kits.</span></p>
+				
+				<table cellspacing="20">
+					<col width="100">
+					<col width="500">
+					<col width="200">
+					<tr>
+						<th>Product</th>
+						<th>Description</th>
+						<th>Spec. Sheet</th>
+					</tr>
+					<tr>
+						<td><span style="font-size:12px">Conversion Kit (7kW)</span></td>
+						<td><span style="font-size:12px">As off-grid energy systems continue to grow in size and capacity, it is becoming more common to have a 240V instead of 120V only. This conversion kit allows the EcoGen to be converted easily from a 120V system to a 240V system and still maintain a full 6kW output.</span></td>
+						<td><span style="font-size:12px"><a href="files/spec_sheets/accessories/maintenance_kits/conversion_kit.pdf" target="_blank"><u>here</u></a></span></td>
+					</tr>
+					<tr>
+						<td><span style="font-size:12px">Maintenance Kit (6-20kW)</span></td>
+						<td><span style="font-size:12px">Fits models: 6482, 6483, 6484, 6485, 6003, 6004</span></td>
+						<td><span style="font-size:12px"><a href="files/spec_sheets/accessories/maintenance_kits/6-20kW.pdf" target="_blank"><u>here</u></a></span></td>
+					</tr>
+					<tr>
+						<td><span style="font-size:12px">Maintenance Kit (8-20kW)</span></td>
+						<td><span style="font-size:12px">Fits models: 5662, 5663, 5664, 5665</span></td>
+						<td><span style="font-size:12px"><a href="files/spec_sheets/accessories/maintenance_kits/NAME.pdf" target="_blank"><u>here</u></a></span></td>
+					</tr>
+					<tr>
+						<td><span style="font-size:12px">Maintenance Kit (22-150kW)</span></td>
+						<td><span style="font-size:12px">Fits models: 5655, 5656, 5658, 5984, 5985, 5660</span></td>
+						<td><span style="font-size:12px"><a href="files/spec_sheets/accessories/maintenance_kits/NAME.pdf" target="_blank"><u>here</u></a></span></td>
+					</tr>
+				</table>
+			</div>
+				<div id="remote_monitoring" style="display:none">
+					<h2>Remote Monitoring</h2>
+					<p><span style="font-size:12px">We carry products that make remote monitoring of your generator simple and easy. You can check the status of your generator and receive instant updates without ever leaving your home. <br><br>*See the table below for more information regarding remote monitoring products.</span></p>
+
+					<table cellspacing="20">
+						<col width="200">
+						<col width="500">
+						<col width="100">
+						<tr>
+							<th>Product</th>
+							<th>Description</th>
+							<th>Spec. Sheet</th>
+						</tr>
+						<tr>
+							<td><span style="font-size:12px; text-align:top">Mobile Link Remote Monitoring System (8-150kW)</span></td>
+							<td><span style="font-size:12px">Mobile Link is the new cellular remote monitoring system from Generac that lets you check on your standby generator’s status, or receive timely notifications when something is needed, using your computer, tablet or smartphone. With Mobile Link, you’ll always know exactly what your generator is doing – or not doing—anytime, anywhere. <br><br></span></td>
+							<td><span style="font-size:12px"><a href="files/spec_sheets/accessories/remote_monitoring/wireless_link.pdf" taget="_blank"><u>here</u></a><br><br><a href="files/spec_sheets/accessories/remote_monitoring/mobile_link_warranty.pdf" target="_blank"><u>warranty info.</u></a></span></td>
+						</tr>
+						<tr>
+							<td><span style="font-size:12px; vertical-align:top">Wireless Monitor (8-150kW)</span></td>
+							<td><span style="font-size:12px">No need to go outside during inclement weather to check your generator's status. Completely wireless and battery powered, Generac's Wireless Monitor provides you with instant status information without ever leaving the house. Basic features include:<br></span></td>
+							<td><span style="font-size:12px"><a href="files/spec_sheets/accessories/remote_monitoring/wireless_monitor.pdf" target="_blank"><u>here</u></a></span></td>
+						</tr>
+					</table>
+				</div>
+
+				<div id="car_inverters" style="display:none">
+					<h2>Car Power Inverters</h2>
+					<p><span style="font-size:12px">Power inverters transform a vehicle’s DC electric power to AC power—just like the utility power that supplies your home. Generac power inverters make it easy to power appliances and charge personal electronics when you’re driving, boating, camping—wherever your vehicle takes you.<br><br>
+Generac power inverters are among the first to offer the advanced technology of a USB 2.1A port, the latest standard in USB power. This lets you quickly and conveniently charge your personal electronics—like tablet computers such as the iPad®, cell phones, and MP3 players.<br><br>*See the table below for all of the Generac power inverters available.</span></p>
+				
+				<table cellspacing="20">
+					<col width="100">
+					<col width="600">
+					<col width="100">
+					<tr>
+						<th>Sizes (watts)</th>
+						<th>Description</th>
+						<th>Spec. Sheet</th>
+					</tr>
+					<tr>
+						<td>100W<br>200W<br>400W<br>750W</td>
+						<td><span style="font-size:12px">Ideal for charging a wide range of electronics up to small appliances such as coffee makers or an electric drill. </span></td>
+						<td><a href="files/spec_sheets/accessories/power_inverters/inverters.pdf" target="_blank"><u>here</u></a></td>
+					</tr>
+					
+				</table>
+				</div>
+		</div>
+
+		<div id="warranties" style="float: left; display: none; padding-bottom:200px">
+			<h2>Extended Warranties</h2>
+			<p><span style="font-size:12px">Walsh Electric offers Generac Extended Warranties for various makes and models of generators. Extended warranties MUST be purchased within 1 year of installation.<br><br> <h3><u>Pre-2013 Models</u></h3>For air-cooled models of generators produced before 2013, your generator came from the factory with a 3 year warranty seen <a href="files/extended_warranties/generac_3year_air_cooled.pdf" target="_blank"><u>here.</u></a> Extended warranties can not be purchased for units that have been installed for more than one year. <br><h3><u>2013 and Older</u></h3>For air-cooled models produced in 2013 and later, your generator comes from the factory with a 5-year warranty seen <a href="files/extended_warranties/generac_5year_air_cooled.pdf" target="_blank"><u>here</u></a><br><br>**Walsh Electric can take your 5-year warranty a step farther by providing an <u>extended</u> 5-year warranty seen <a href="files/extended_warranties/generac_5year_extended_air_cooled.pdf" target="_blank"><u>here</u></a></span></p>
+		</div>
+
+		<div id="services" style="float: left; display: none; padding-bottom:200px">
+			<h2>Service & Maintenance</h2>
+			<p><span style="font-size:12px">Walsh Electric provides generator service and maintenance so even after your install we make sure your generator is properly maintained. <br><br>Preventative/Scheduled Maintenance is recommended every at least once a year, twice for heavier use (40+ hours/yr). <br><br>A maintenance includes: changing generator spark plugs, oil change, oil filter change, cleaning/testing of battery, and testing of generator's transfer, making sure your generator remains fully functional! <br><br> See our service contract for <i>air-cooled models </i><a href="files/maintenance_contracts/maintenance_contract_air_cooled.pdf" target="_blank"><u>here</u></a><br><br>OR, for <i>liquid cooled models </i><a href="files/maintenance_contracts/maintenance_contract_liquid_cooled.pdf" target="_blank"><u>here</u></a></span></p>
+		</div>
+
 	    </div>
 	    
 	    <div id="generac">
 		    <table><tr><td style="text-align:center">
-	    	<a href="http://www.generac.com" target="_blank"><img src="images/gen4.png" alt="Generac" style="border:none" /></a>
+	    	<img src="images/gen4.png" alt="Generac" style="border:none" /></a>
 	    	</td></tr><tr><td style="text-align:center;width:200px">
-	    	<span class="medium">Walsh Electric is an authorized Factory dealer and service provider for Generac Power Systems.</span><br /><span class="small">(Click on the logo for more information.)</span>
+	    	<span class="medium">Walsh Electric is an authorized Factory dealer and service provider for Generac Power Systems.</span><br />
 	    	</td></tr>
 	    	</table>
 		</div>
@@ -160,6 +1097,295 @@
 		</div>-->
 
 	</div>
+	<script type="text/javascript">
+	function displayInfo(){
+		var textbox = document.getElementById("select");
+		var selection = textbox.options[textbox.selectedIndex].text;
+		if(selection == "Residential"){
+			document.getElementById('residential').style.display= 'block';
+			document.getElementById('commercial').style.display = 'none';
+			document.getElementById('portable').style.display = 'none';
+			document.getElementById('accessories').style.display = 'none';
+			document.getElementById('warranties').style.display = 'none';
+			document.getElementById('services').style.display = 'none';
+		}
+		else if(selection == "Commercial"){
+			document.getElementById('residential').style.display= 'none';
+			document.getElementById('commercial').style.display = 'block';
+			document.getElementById('portable').style.display = 'none';
+			document.getElementById('accessories').style.display = 'none';
+			document.getElementById('warranties').style.display = 'none';
+			document.getElementById('services').style.display = 'none';
+
+		}
+		else if(selection == "Portable"){
+			document.getElementById('residential').style.display= 'none';
+			document.getElementById('commercial').style.display = 'none';
+			document.getElementById('portable').style.display = 'block';
+			document.getElementById('accessories').style.display = 'none';
+			document.getElementById('warranties').style.display = 'none';
+			document.getElementById('services').style.display = 'none';
+
+
+		}
+		else if(selection == "Accessories"){
+			document.getElementById('residential').style.display= 'none';
+			document.getElementById('commercial').style.display = 'none';
+			document.getElementById('portable').style.display = 'none';
+			document.getElementById('accessories').style.display = 'block';
+			document.getElementById('warranties').style.display = 'none';
+			document.getElementById('services').style.display = 'none';
+
+		}
+		else if(selection == "Extended Warranties"){
+			document.getElementById('residential').style.display= 'none';
+			document.getElementById('commercial').style.display = 'none';
+			document.getElementById('portable').style.display = 'none';
+			document.getElementById('accessories').style.display = 'none';
+			document.getElementById('warranties').style.display = 'block';
+			document.getElementById('services').style.display = 'none';
+
+		}
+		else if(selection == "Service & Maintenance"){
+			document.getElementById('residential').style.display= 'none';
+			document.getElementById('commercial').style.display = 'none';
+			document.getElementById('portable').style.display = 'none';
+			document.getElementById('accessories').style.display = 'none';
+			document.getElementById('warranties').style.display = 'none';
+			document.getElementById('services').style.display = 'block';
+
+		}
+		else{
+			document.getElementById('residential').style.display= 'none';
+			document.getElementById('commercial').style.display = 'none';
+			document.getElementById('portable').style.display = 'none';
+			document.getElementById('accessories').style.display = 'none';
+			document.getElementById('warranties').style.display = 'none';
+			document.getElementById('services').style.display = 'none';
+		}
+		
+	};
+
+	function showResidential(){
+		var textbox = document.getElementById("residential_select");
+		var selection = textbox.options[textbox.selectedIndex].text;
+
+		if(selection == "Guardian Series"){
+			document.getElementById('guardian').style.display = 'block';
+			document.getElementById('quietsource').style.display = 'none';
+			document.getElementById('protector_diesel').style.display = 'none';
+		}
+		else if(selection == "QuietSource Series"){
+			document.getElementById('guardian').style.display = 'none';
+			document.getElementById('quietsource').style.display = 'block';
+			document.getElementById('protector_diesel').style.display = 'none';
+
+		}
+		else if(selection == "Protector Diesel Series"){
+			document.getElementById('guardian').style.display = 'none';
+			document.getElementById('quietsource').style.display = 'none';
+			document.getElementById('protector_diesel').style.display = 'block';
+
+		}
+		else{
+			document.getElementById('guardian').style.display = 'none';
+			document.getElementById('quietsource').style.display = 'none';
+			document.getElementById('protector_diesel').style.display = 'none';
+		}
+
+	};
+
+	function showCommercial(){
+		var textbox = document.getElementById("commercial_select");
+		var selection = textbox.options[textbox.selectedIndex].text;
+
+		if(selection == "Commercial Series"){
+			document.getElementById('commercial_series').style.display = 'block';
+			document.getElementById('quietsource_series').style.display = 'none';
+			document.getElementById('mobile_power_generators').style.display = 'none';
+			document.getElementById('protector_series').style.display = 'none';
+		}
+		else if(selection == "QuietSource Series"){
+			document.getElementById('commercial_series').style.display = 'none';
+			document.getElementById('quietsource_series').style.display = 'block';
+			document.getElementById('mobile_power_generators').style.display = 'none';
+			document.getElementById('protector_series').style.display = 'none';
+		}
+		else if(selection == "Mobile Power Generators"){
+			document.getElementById('commercial_series').style.display = 'none';
+			document.getElementById('quietsource_series').style.display = 'none';
+			document.getElementById('mobile_power_generators').style.display = 'block';
+			document.getElementById('protector_series').style.display = 'none';
+		}
+		else if(selection == "Protector Series"){
+			document.getElementById('commercial_series').style.display = 'none';
+			document.getElementById('quietsource_series').style.display = 'none';
+			document.getElementById('mobile_power_generators').style.display = 'none';
+			document.getElementById('protector_series').style.display = 'block';
+		}
+		else{
+			document.getElementById('commercial_series').style.display = 'none';
+			document.getElementById('quietsource_series').style.display = 'none';
+			document.getElementById('mobile_power_generators').style.display = 'none';
+			document.getElementById('protector_series').style.display = 'none';
+		}
+	}
+
+	function showPortable(){
+		var textbox = document.getElementById("portable_select");
+		var selection = textbox.options[textbox.selectedIndex].text;
+
+		if(selection == "GP Series"){
+			document.getElementById('gp_series').style.display = 'block';
+			document.getElementById('xg_series').style.display = 'none';
+			document.getElementById('xp_series').style.display = 'none';
+			document.getElementById('ix_series').style.display = 'none';
+			document.getElementById('lp_series').style.display = 'none';
+		}
+		else if(selection == "XG Series"){
+			document.getElementById('gp_series').style.display = 'none';
+			document.getElementById('xg_series').style.display = 'block';
+			document.getElementById('xp_series').style.display = 'none';
+			document.getElementById('ix_series').style.display = 'none';
+			document.getElementById('lp_series').style.display = 'none';
+		}
+		else if(selection == "XP Series"){
+
+			document.getElementById('gp_series').style.display = 'none';
+			document.getElementById('xg_series').style.display = 'none';
+			document.getElementById('xp_series').style.display = 'block';
+			document.getElementById('ix_series').style.display = 'none';
+			document.getElementById('lp_series').style.display = 'none';
+		}
+		else if(selection == "iX Series"){
+
+			document.getElementById('gp_series').style.display = 'none';
+			document.getElementById('xg_series').style.display = 'none';
+			document.getElementById('xp_series').style.display = 'none';
+			document.getElementById('ix_series').style.display = 'block';
+			document.getElementById('lp_series').style.display = 'none';
+		}
+		else if(selection == "LP Series"){
+
+			document.getElementById('gp_series').style.display = 'none';
+			document.getElementById('xg_series').style.display = 'none';
+			document.getElementById('xp_series').style.display = 'none';
+			document.getElementById('ix_series').style.display = 'none';
+			document.getElementById('lp_series').style.display = 'block';
+		}
+		else{
+			document.getElementById('gp_series').style.display = 'none';
+			document.getElementById('xg_series').style.display = 'none';
+			document.getElementById('xp_series').style.display = 'none';
+			document.getElementById('ix_series').style.display = 'none';
+			document.getElementById('lp_series').style.display = 'none';
+		}
+	}
+
+	function showAccessory(){
+		var textbox = document.getElementById("accessory_select");
+		var selection = textbox.options[textbox.selectedIndex].text;
+
+		if(selection == "Batteries"){
+
+			document.getElementById('batteries').style.display = 'block';
+			document.getElementById('cold_weather').style.display = 'none';
+			document.getElementById('automatic_transfer_switches').style.display = 'none';
+			document.getElementById('manual_transfer_switches').style.display = 'none';
+			document.getElementById('load_management').style.display = 'none';
+			document.getElementById('maintenance_kits').style.display = 'none';
+			document.getElementById('remote_monitoring').style.display = 'none';
+			document.getElementById('car_inverters').style.display = 'none';
+		}
+		else if(selection == "Cold Weather"){
+
+			document.getElementById('batteries').style.display = 'none';
+			document.getElementById('cold_weather').style.display = 'block';
+			document.getElementById('automatic_transfer_switches').style.display = 'none';
+			document.getElementById('manual_transfer_switches').style.display = 'none';
+			document.getElementById('load_management').style.display = 'none';
+			document.getElementById('maintenance_kits').style.display = 'none';
+			document.getElementById('remote_monitoring').style.display = 'none';
+			document.getElementById('car_inverters').style.display = 'none';
+		}
+		else if(selection == "Automatic Transfer Switches"){
+
+			document.getElementById('batteries').style.display = 'none';
+			document.getElementById('cold_weather').style.display = 'none';
+			document.getElementById('automatic_transfer_switches').style.display = 'block';
+			document.getElementById('manual_transfer_switches').style.display = 'none';
+			document.getElementById('load_management').style.display = 'none';
+			document.getElementById('maintenance_kits').style.display = 'none';
+			document.getElementById('remote_monitoring').style.display = 'none';
+			document.getElementById('car_inverters').style.display = 'none';
+		}
+		else if(selection == "Manual Transfer Switches"){
+
+			document.getElementById('batteries').style.display = 'none';
+			document.getElementById('cold_weather').style.display = 'none';
+			document.getElementById('automatic_transfer_switches').style.display = 'none';
+			document.getElementById('manual_transfer_switches').style.display = 'block';
+			document.getElementById('load_management').style.display = 'none';
+			document.getElementById('maintenance_kits').style.display = 'none';
+			document.getElementById('remote_monitoring').style.display = 'none';
+			document.getElementById('car_inverters').style.display = 'none';
+		}
+		else if(selection =="Load Management/Switches"){
+
+			document.getElementById('batteries').style.display = 'none';
+			document.getElementById('cold_weather').style.display = 'none';
+			document.getElementById('automatic_transfer_switches').style.display = 'none';
+			document.getElementById('manual_transfer_switches').style.display = 'none';
+			document.getElementById('load_management').style.display = 'block';
+			document.getElementById('maintenance_kits').style.display = 'none';
+			document.getElementById('remote_monitoring').style.display = 'none';
+			document.getElementById('car_inverters').style.display = 'none';
+		}
+		else if(selection == "Maintenance Kits/Conversion Kits"){
+
+			document.getElementById('batteries').style.display = 'none';
+			document.getElementById('cold_weather').style.display = 'none';
+			document.getElementById('automatic_transfer_switches').style.display = 'none';
+			document.getElementById('manual_transfer_switches').style.display = 'none';
+			document.getElementById('load_management').style.display = 'none';
+			document.getElementById('maintenance_kits').style.display = 'block';
+			document.getElementById('remote_monitoring').style.display = 'none';
+			document.getElementById('car_inverters').style.display = 'none';
+		}
+		else if(selection == "Remote Monitoring"){
+			document.getElementById('batteries').style.display = 'none';
+			document.getElementById('cold_weather').style.display = 'none';
+			document.getElementById('automatic_transfer_switches').style.display = 'none';
+			document.getElementById('manual_transfer_switches').style.display = 'none';
+			document.getElementById('load_management').style.display = 'none';
+			document.getElementById('maintenance_kits').style.display = 'none';
+			document.getElementById('remote_monitoring').style.display = 'block';
+			document.getElementById('car_inverters').style.display = 'none';
+
+		}
+		else if(selection == "Car Inverters"){
+			document.getElementById('batteries').style.display = 'none';
+			document.getElementById('cold_weather').style.display = 'none';
+			document.getElementById('automatic_transfer_switches').style.display = 'none';
+			document.getElementById('manual_transfer_switches').style.display = 'none';
+			document.getElementById('load_management').style.display = 'none';
+			document.getElementById('maintenance_kits').style.display = 'none';
+			document.getElementById('remote_monitoring').style.display = 'none';
+			document.getElementById('car_inverters').style.display = 'block';
+		}
+		else{
+			document.getElementById('batteries').style.display = 'none';
+			document.getElementById('cold_weather').style.display = 'none';
+			document.getElementById('automatic_transfer_switches').style.display = 'none';
+			document.getElementById('manual_transfer_switches').style.display = 'none';
+			document.getElementById('load_management').style.display = 'none';
+			document.getElementById('maintenance_kits').style.display = 'none';
+			document.getElementById('remote_monitoring').style.display = 'none';
+			document.getElementById('car_inverters').style.display = 'none';
+		}
+	}
+
+	</script>
 
 </body>
 
